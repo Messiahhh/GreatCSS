@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            .trigger {
+                padding: 10px 14px;
+                background: pink;
+            }
+            .trigger:hover .el {
+                max-height: 20px;
+            }
+            .el {
+                transition: all 1s;
+                max-height: 0;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="trigger">
+            Hover me to see transtion
+            <div class="el">
+                content
+            </div>
+        </div>
+    </body>
+</html>

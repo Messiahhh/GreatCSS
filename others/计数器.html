@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+
+            body {
+                counter-reset: section;
+            }
+
+            h3::before {
+                counter-increment: section;
+                content: counter(section) "."
+            }
+
+            h3 {
+                counter-reset: subsection;
+            }
+
+            h5::before {
+                counter-increment: subsection;
+                content: counter(section) "." counter(subsection) "."
+            }
+        </style>
+    </head>
+    <body>
+        <h1>博客文章</h1>
+
+        <h3>CSS 教程</h3>
+        <h5>样式</h5>
+        <h5>动画</h5>
+        <h3>JavaScript 教程</h3>
+        <h5>语法学习</h5>
+        <h3>Vue教程</h3>
+        <h5>基本语法</h5>
+        <h5>组件</h5>
+        <h5>生命周期</h5>
+        <h5>其他</h5>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            .test {
+                width: 400px;
+                height: 600px;
+                background: pink;
+            }
+
+            .test:fullscreen {
+                font-size: 6vw;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="test">
+            <p>hello world</p>
+        </div>
+        <script type="text/javascript">
+            let el = document.querySelector('.test')
+            el.addEventListener('click', () => {
+                el.requestFullscreen()
+            })
+        </script>
+    </body>
+</html>

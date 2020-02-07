@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            .unselected {
+                user-select: none;
+            }
+
+            .selected::selection {
+                background: deeppink;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <p>可以选择我</p>
+        <p class='unselected'>不能选择我</p>
+        <p class='selected'>选择我时字体颜色变化</p>
+    </body>
+</html>

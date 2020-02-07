@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            @keyframes loader {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            .loading {
+                width: 20px;
+                height: 20px;
+                border: 2px solid #ddd;
+                border-bottom-color: pink;
+                border-radius: 50%;
+                animation: loader 1s linear infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="loading">
+
+        </div>
+    </body>
+</html>

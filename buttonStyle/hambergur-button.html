@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            .menu {
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                width: 60px;
+                height: 60px;
+            }
+
+            .bar {
+                height: 5px;
+                border-radius: 5px;
+                /* 加一个margin */
+                margin: 6px 0;
+                background: pink;
+                transform-origin: left;
+                transition: all .5s;
+            }
+            .menu:hover .bar.top {
+                transform: rotate(45deg);
+            }
+            .menu:hover .bar.middle {
+                opacity: 0;
+            }
+            .menu:hover .bar.bottom {
+                transform: rotate(-45deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="bar top">
+
+            </div>
+            <div class="bar middle">
+
+            </div>
+            <div class="bar bottom">
+
+            </div>
+        </div>
+    </body>
+</html>
